@@ -1,6 +1,9 @@
-class StringDemo {
+class Demo{
+
     public static void main(String[] args) {
-        String str = new String("First Code of String");
+        
+        String str = "Hello World";
+
         System.out.println(str);
     }
 }
