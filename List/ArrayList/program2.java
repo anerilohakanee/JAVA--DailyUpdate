@@ -12,8 +12,8 @@ class User{
         this.rollNo = rollNo;
         this.name = name;
     }
-    public String toString(){
-        return name;
+    public String toString(){           //If we not give the call to toString() method then output will be the address and not data in case of user defined ArrayList.
+        return name;                    //In case of predefined methods of ArrayList they internally gives the call to toString() method so at that time no need to give call manually to toString() method.
     }
 }
 
