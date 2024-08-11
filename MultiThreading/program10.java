@@ -3,10 +3,10 @@ package MultiThreading;
 class MyThread extends Thread{
 
     MyThread(ThreadGroup tg, String str){
-        super(tg , str);
+        super(tg, str);
     }
     public void run(){
-        System.out.println(getName());
+        //System.out.println(getName());
         System.out.println(Thread.currentThread().getThreadGroup());
     }
 }
@@ -28,14 +28,14 @@ class ThreadGroupDemo{
 
         ThreadGroup cthreadGP = new ThreadGroup("Incubator");
 
-        MyThread obj5 = new MyThread(pthreadGP, "Fluuter");
-        MyThread obj6 = new MyThread(pthreadGP, "SpringBoot");
-        MyThread obj7 = new MyThread(pthreadGP, "ReactJs");
+        MyThread obj5 = new MyThread(cthreadGP, "Fluuter");
+        MyThread obj6 = new MyThread(cthreadGP, "SpringBoot");
+        MyThread obj7 = new MyThread(cthreadGP, "ReactJs");
 
         obj5.start();
         obj6.start();
         obj7.start();
 
-        cthreadGP.interrupt();
+        //cthreadGP.interrupt();
     }
 }

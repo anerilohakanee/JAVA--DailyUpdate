@@ -12,7 +12,7 @@ class MyThread extends Thread{
         System.out.println("MyThread : " +Thread.currentThread().getName());
 
         Demo obj = new Demo();
-        obj.start();
+     //   obj.start();
     }
 }
 class DemoThread{
